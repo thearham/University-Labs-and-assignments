@@ -4,6 +4,10 @@
 *.obj
 *.class
 *.pyc
+*.rar
+*.doc
+*.docx
+*.pdf
 __pycache__/
 .ipynb_checkpoints/
 
