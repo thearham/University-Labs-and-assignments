@@ -126,7 +126,7 @@ This repository is for educational purposes and contains coursework from my Comp
 
 ## 👨‍💻 Author
 
-**Abdul Rehman**  
+**Arham Azam**  
 BS Computer Science Student
 
 ---
