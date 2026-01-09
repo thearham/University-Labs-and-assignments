@@ -1,0 +1,5 @@
+Rectangle: Length = 10.2, width = 5.35, area = 54.57, parameter = 31.1
+Circle: Radius = 15.6, area = 764.54, circumference = 98.0179
+Name: Randy Gill, age: 31, Beginning balance = $18500, interest rate = 3.5
+Balance at the end of the month = $19147.5
+The character that comes after A in the ASCII set is B

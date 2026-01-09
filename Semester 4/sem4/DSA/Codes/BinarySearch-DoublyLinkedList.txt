@@ -1,0 +1,104 @@
+#include<iostream>
+using namespace std;
+
+struct Node {
+	int data;
+	struct Node* next;
+	struct Node* previous; //
+};
+
+Node* newNode(int x)
+{
+	struct Node* temp = new Node;
+	temp->data = x;
+	temp->next = NULL;
+	temp->previous = NULL; //
+	return temp;
+}
+
+// function to find out middle element
+struct Node* middle(Node* start, Node* last)
+{
+	if (start == NULL) {
+		return NULL;
+	}
+
+
+	struct Node* slow = start;
+	struct Node* fast = start->next;
+
+	while (fast != last) {
+		fast = fast->next;
+		if (fast != last) {
+			slow = slow->next;
+			fast = fast->next;
+		}
+	}
+
+	return slow;
+}
+
+// Function for implementing the Binary
+// Search on linked list
+struct Node* binarySearch(Node* head, int value)
+{
+	struct Node* start = head;
+	struct Node* last = NULL;
+	while (last == NULL || last != start) {
+
+		// Find middle
+		Node* mid = middle(start, last);
+
+		// If middle is empty
+		if (mid == NULL) { return NULL; }
+
+		// If value is present at middle
+		if (mid->data == value) { return mid; }
+
+		// If value is more than mid
+		else if (mid->data < value) { start = mid->next; }
+
+		// If the value is less than mid.
+		else { last = mid->previous; } //
+	}
+	// value not present
+	return NULL;
+}
+
+// Driver Code
+int main()
+{
+	Node* head = newNode(1);
+	head->next = newNode(4);
+	head->next->previous = head;
+	head->next->next = newNode(7);
+	head->next->next->previous = head->next;
+	head->next->next->next = newNode(8);
+	head->next->next->next->previous = head->next->next;
+	head->next->next->next->next = newNode(9);
+	head->next->next->next->next->previous = head->next->next->next;
+	Node* tail = newNode(10);
+	head->next->next->next->next->next = tail;
+	tail->previous= head->next->next->next->next;
+
+	Node* temp = head;
+
+	while (temp != NULL) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+
+	cout << endl;
+	cout << endl;
+
+
+
+	int value = 9;
+	if (binarySearch(head, value) == NULL) {
+		cout << "Value not present" << endl;
+	}
+	else {
+		cout << "Present" << endl;;
+	}
+	return 0;
+}

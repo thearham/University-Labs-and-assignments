@@ -1,0 +1,39 @@
+#include <iostream>
+#include <unordered_map>
+
+using namespace std;
+
+struct Student {
+	string name;
+	int dataStructure;
+	int linearAlgebra;
+	int databaseSystems;
+};
+
+int main() {
+	unordered_map<int, Student> studentData;
+
+	// Adding student data
+	studentData[101] = { "Mobeen", 85, 90, 78 };
+	studentData[102] = { "Babar", 92, 88, 95 };
+	studentData[103] = { "Usman", 78, 85, 80 };
+	// Add more students and their data as needed
+
+	// Retrieving data for a specific student
+	int studentID;
+	cout << "Enter the student ID to get information: ";
+	cin >> studentID;
+
+	auto it = studentData.find(studentID);
+	if (it != studentData.end()) {
+		cout << "Student Name: " << it->second.name << "\n";
+		cout << "Data Structure: " << it->second.dataStructure << "\n";
+		cout << "Linear Algebra: " << it->second.linearAlgebra << "\n";
+		cout << "Database Systems: " << it->second.databaseSystems << "\n";
+	}
+	else {
+		cout << "Student not found.\n";
+	}
+
+	
+}

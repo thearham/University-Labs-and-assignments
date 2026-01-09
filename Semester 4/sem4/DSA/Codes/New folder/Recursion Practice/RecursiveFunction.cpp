@@ -1,0 +1,91 @@
+#include<iostream>
+using namespace std;
+
+int RFacotial(int n) {
+	if (n == 0 || n == 1) {
+		return 1;
+	}
+	else {
+		return n * RFacotial(n - 1);
+	}
+}
+bool RLinearSearch(int A[], int key, int low, int high) {
+	if (A[low] == key) {
+		return true;
+	}
+	else if (low > high) {
+		return false;
+	}
+	else {
+		return RLinearSearch(A, key, low + 1, high);
+	}
+}
+
+bool LinearSearch(int A[], int Key, int size) {
+	int i = 0;
+	while (A[i] != Key && i <= size) { 	i++;}
+	if (i <= size) {return true;}
+	else { return false; }
+}
+
+bool RBinarySearch(int A[], int Key, int low, int high) {
+	if (low > high) { return false;}
+
+	int mid = (low + high) / 2;
+
+	if (A[mid] == Key) { return true; }
+
+	else if (Key > A[mid]) { 
+		return RBinarySearch(A, Key, mid + 1, high); 
+	}
+
+	else {
+		 return RBinarySearch(A, Key, low, mid-1);
+	}
+}
+
+bool BinarySearch(int A[], int Key, int low, int high) {
+	int mid = (low + high) / 2;
+	while (A[mid] != Key && low <= high) {
+		if (A[mid] > Key) { high = mid - 1; }
+		else { low = mid + 1; }
+		mid = (low + high) / 2;
+	}
+	if (low <= high) { return true; }
+	else { return false; }
+}
+int* BubbleSort(int A[], int size) {
+	for (int i = 0; i <= size; i++) {
+		for (int j = 0; j <= size - 1 - i; j++) {
+			if (A[j] > A[j + 1]) {
+				swap(A[j], A[j + 1]);
+			}
+		}
+	}
+	return A;
+}
+
+void PrintArray(int A[], int size) {
+	for (int i = 0; i <= size; i++) {
+		cout << A[i] << " ";
+	}
+	cout << endl;
+
+}
+
+int main() {
+	
+	int A[] = { 7,9,3,6,5,79,01,6,89 };
+	int size = sizeof(A) / sizeof(A[0]);
+	cout << "Linear Search: " << endl;
+	if (RLinearSearch(A, 6,0,size-1)) { cout << "Found" << endl; }
+	else { cout << "Not-found" << endl; }
+	PrintArray(A, size - 1);
+	int* B = BubbleSort(A, size - 1);
+	PrintArray(B, size - 1);
+	cout << "Binary Search: " << endl;
+	if (RBinarySearch(B,70,0,size-1)) { cout << "Found" << endl; }
+	else { cout << "Not-found" << endl; }
+
+	//cout << "Factorial of 5: " << RFacotial(5);
+}

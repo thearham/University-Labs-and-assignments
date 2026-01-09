@@ -1,0 +1,6 @@
+f1:(Islamabad, Amman)  Tue, Thu        @2:00  .
+f2:(Islamabad, Amman)  Wed             @18:00 .
+f3:(Islamabad, Paris)  Mon, Sat        @13:30 .
+f4:(Islamabad, Madrid) Mon,            @9:00  .
+f5:(Islamabad, Dubai)  Mon,Tue,Thu,Sun @19:15 .
+f6:(Islamabad, Cario)  Tue, Thu        @14:00 .

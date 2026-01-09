@@ -1,0 +1,2 @@
+The sum of numbers = 17
+The average = 3

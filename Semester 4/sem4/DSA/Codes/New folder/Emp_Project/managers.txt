@@ -1,0 +1,3 @@
+CS Manager 1;140;24.50;1;
+Arts Manager 1;150;20.25;2;
+SE Manager 1;160;27.75;3;

@@ -1,0 +1,25 @@
+S24 ISD Final Exam Topics:
+ 
+-Class Diagram (Lecture#29 on Youtube)
+-DFD (Lecture#30 on Youtube)
+-Use Case Diagram (Lecture#31 on Youtube)
+-Validation and Verification (Lecture#32 on Youtube)
+-Measuring Requirements (Lecture#33 on Youtube)
+-Function Point Metric (Lecture#35 on Youtube)
+-Software Measurements and Types (Lecture#36 on Youtube)
+-Modularity (Lecture#37 on Youtube)
+-Tradeoff Analysis (Lecture#38 on Youtube)
+-Cost Benefit Analysis (Lecture#39 on Youtube)
+-Defect Removal Efficiency (Lecture#40 on Youtube)
+-03 Point Value Estimation (Lecture#41 on Youtube)
+-CoCoMo81 (Lecture#42 on Youtube)
+-Testing concepts (Lecture#43 on Youtube)
+-Cyclomatic Complexity (Lecture#44 on Youtube)
+ 
+S24 ISD Final Exam Paper Pattern:
+ 
+-Total 08 to 09 questions
+-Total 40 marks exam
+-02 to 03 theoretical questions {reasoning based / difference} (2 marks Each)
+-The rest all are numericals.
+-01 question will be from the 03 diagrams (Class, DFD, UseCase)

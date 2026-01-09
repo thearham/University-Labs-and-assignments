@@ -1,0 +1,11 @@
+Name             No.of_Filghts .        
+
+YASIN                32 .
+Uzair                10 .
+Ahmad                11 .
+Talha                15 .
+Bilal                20 .
+Qasim                22 .
+Jhons                13 .
+Abrar                28 .
+Waqar                18 .

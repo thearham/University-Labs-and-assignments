@@ -1,0 +1,13 @@
+OS SYLLABUS:
+
+	-Threads 		[x]
+	-Synchronization 	[x]
+	-Deadlocks 		[x]
+	-Main Memory 		[x]
+	-virtual Memory 	[x]
+	-page faults 		[x]
+
+
+how to prepare:
+I know threads, page faults, some of memory. I need more focus on synchronization.
+I'll start with numerical type questions, then I'll progress towards synchronization.

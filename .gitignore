@@ -1,0 +1,28 @@
+# Compiled files
+*.exe
+*.o
+*.obj
+*.class
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Build directories
+build/
+dist/
+*.egg-info/

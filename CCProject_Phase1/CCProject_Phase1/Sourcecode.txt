@@ -1,0 +1,18 @@
+int main(){
+
+	int _first = 1;
+	char second = "C";
+        int y;
+	int _x;
+	int my_age = 22;
+	string _name = "Arham and Ali";
+
+	for( int i = 0; i < 5; i++) {
+		cout << first << endl;
+		cout << second << endl;
+		cout << name << endl;
+	}
+
+	return 0;
+
+}

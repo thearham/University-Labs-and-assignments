@@ -1,0 +1,5 @@
+Ahmad  50000  JuniorLecturer      03339587426
+Ali    90000  AssistantProfessor  03216584230
+Maria  75000  AssistantProfessor  03039015721
+Iqra   85000  Lecturer             03332514332
+Hashim 100000 AssociateProfessor  03006500001
